@@ -21,9 +21,22 @@
             }
 
             sumaDigitos() {
-
+                let string = this.num.toString()
+                let suma = 0
+                for (let i = 0; i < string.length; i++) {
+                    suma += parseInt(string.substring(i,i+1))
+                }
+                console.log(suma)
             }
         }
+
+        /* Texto a escribir para el ejercicio */
+        let numero = new Cifras(8)
+        numero.esPar()
+        numero.sumaDigitos()
+        let numero1 = new Cifras(11)
+        numero1.esPar()
+        numero1.sumaDigitos()
 
     </script>
 </body>

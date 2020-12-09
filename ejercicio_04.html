@@ -8,13 +8,22 @@
 <body>
     <script>
         class Finanzas {
-            dolaresAEuros (dolar) {
+            dolaresToEuros (dolar) {
                 console.log(dolar*0.83)
             }
-            eurosADolaresA (euro) {
+            eurosToDolares (euro) {
                 console.log(euro/0.83)
             }
         }
+
+    /* Texto a escribir para el ejercicio */
+    let conversor = new Finanzas()
+    conversor.dolaresToEuros(1)
+    conversor.eurosToDolares(1)
+    let numero1 = new Finanzas()
+    numero1.dolaresToEuros(8)
+    numero1.eurosToDolares(8)
+
     </script>
 </body>
 </html>
